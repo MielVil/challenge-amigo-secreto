@@ -12,7 +12,11 @@
 /* Estilos generales */
 
 
+
+
 body {
+    background-image: url('/assets/corazones-big.png');
+    background-size: contain;
     font-family: var(--font-arial);
     height: 100vh;
     background-color: var(--color-primary);

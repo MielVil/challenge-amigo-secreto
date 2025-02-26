@@ -1,67 +1,48 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+    --color-primary: #c00000; /*Background Color */
+    --color-secondary:white;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button:#bea7e5;
+    --color-button-hover: #bea7e5;
     --color-text: #444444;
     --color-white: #FFFFFF;
+    --font-arial: Arial, sans-serif;
 }
 
 /* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
+    font-family: var(--font-arial);
     height: 100vh;
     background-color: var(--color-primary);
+    color: var(--color-secondary);
     display: flex;
+    padding: 0;
+    margin: 0;
     justify-content: center;
-    align-items: center;
-}
-
-.main-content {
-    display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
-/* Banner */
-.header-banner {
-    flex: 40%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 40px 0 0;
+    text-align: center;
+    font-size: 1.6rem;
 }
 
-/* Sección de entrada */
+
+
+/* Sección de entrada, cuadro blanco con elementos */
 .input-section {
-    flex: 60%;
-    background-color: var(--color-secondary);
-    border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: white;
+    color: black;
     padding: 20px;
-    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+
 }
 
-/* Títulos */
-.main-title {
-    font-size: 48px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
-    color: var(--color-white);
-}
-
-.section-title {
+/* "Digite el nombre de sus amigos" */
+.section-title { 
     font-family: "Inter", serif;
     font-size: 36px;
     font-weight: 700;
@@ -69,94 +50,44 @@ body {
     margin: 10px 0;
     text-align: center;
 }
-
-/* Contenedores de entrada y botón */
-.input-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 600px;
-    margin-top: 20px;
-}
-
-.input-name {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #000;
-    border-radius: 25px 0 0 25px;
-    font-size: 16px;
-}
-
-.button-container {
-    width: 300px;
-    justify-content: center;
-}
-
-/* Estilos de entrada de texto */
-.input-title {
-    flex: 1;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 2px solid #333;
-    border-right: none;
-    border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
 /* Estilos de botón */
 button {
-    padding: 15px 30px;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    border: 2px solid #000;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
-
-.button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
-    border-radius: 0 25px 25px 0;
-}
-
-.button-add:hover {
-    background-color: #a1a1a1;
-}
-
-/* Listas */
-ul {
-    list-style-type: none;
-    color: var(--color-text);
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    margin: 20px 0;
-}
-
-.result-list {
-    margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* Botón de sortear título */
-.button-draw {
     display: flex;
-    align-items: center;
+    align-items: center;  /* Alinea verticalmente */
+    justify-content: center;  /* Alinea horizontalmente */
+    gap: 8px;  /* Espacio entre el icono y el texto */
+    background-color: #c00000;
+    color: white;
+    border: none;
+    padding: 10px;
     width: 100%;
-    padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
-    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    
 }
 
-.button-draw img {
-    margin-right: 40px;
+/* Diseño de la entrada "Escibre un nombre" */
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.3rem;
 }
 
-.button-draw:hover {
-    background-color: var(--color-button-hover);
+button:hover {
+    background-color: #900000;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background: #f8f8f8;
+    margin: 4px 0;
+    padding: 1px;
+    border-radius: 5px;
+    
 }

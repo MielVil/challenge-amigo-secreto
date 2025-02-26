@@ -8,7 +8,7 @@ function agregarAmigo(){
     
 
     if(nombre === ''){
-        alert("Por fevor, inserte un nombre valido");
+        alert("Por favor, inserte un nombre valido");
     } else{
         listaNombres.push(nombre);
         const espacioLista = document.createElement("li"); //Crea campo vacio para que se agregue en la lista
@@ -30,7 +30,7 @@ function sortearAmigo(){
         let indexAmigo = Math.floor(Math.random()*listaNombres.length);
         let tuAmigoSecretoEs = document.getElementById("tuAmigoEs");
         
-        tuAmigoSecretoEs.innerHTML = `${listaNombres[indexAmigo]}`;
+        tuAmigoSecretoEs.innerHTML = `🎉 Dale un regalo a: ${listaNombres[indexAmigo]} 🎉`;
         listaNombres.splice(indexAmigo,1);
     }
 

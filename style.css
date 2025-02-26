@@ -125,14 +125,35 @@ input {
 button:hover {
     background-color: #900000;
 }
+
 ul {
-    list-style: none;
     padding: 0;
 }
+
+
 li {
-    background: #f8f8f8;
-    margin: 4px 0;
-    padding: 1px;
+    display: flex;
+    justify-content: center; /* Separa el texto y la "x" */
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+    width: 250px; /* Ajusta según sea necesario */
+    margin: 5px auto;
+    background-color: #fff;
     border-radius: 5px;
-    
+    position: relative;
+}
+
+
+span{
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    right: 10px; /* Lo alinea al borde derecho */
+}
+
+span:hover{
+    color: #444444;
 }

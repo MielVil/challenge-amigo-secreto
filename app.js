@@ -15,8 +15,8 @@ function agregarAmigo(){
         lista.appendChild(espacioLista); //agrega el nuevo li dentro de ul
         console.log(listaNombres);
         //Crear boton eliminar nombre
-        let botonEliminar = document.createElement("button")
-        botonEliminar.textContent = " x ";
+        let botonEliminar = document.createElement("span")
+        botonEliminar.textContent = "\u00d7";
 
         botonEliminar.onclick =function(){
             espacioLista.remove(); 

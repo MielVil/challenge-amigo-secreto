@@ -54,8 +54,11 @@ function sortearAmigo(){
 
 // reiniciar
 function reiniciarSorteo(){
-    lista.innerHTML="";
-    limpiarCampo(); 
+    const lista = document.getElementById("listaAmigos"); // CORREGIDO
+    lista.innerHTML = "";
+    listaNombres.length = 0; // También limpiamos el array
+    limpiarCampo();
+    console.log(listaNombres);
 }
 
 function limpiarCampo(){

@@ -3,18 +3,31 @@
 const listaNombres =[];
 
 function agregarAmigo(){
-    const nombre = document.getElementById('amigo').value.trim();
-    const lista = document.getElementById("listaAmigos");
-    
-
+    const nombre = document.getElementById('amigo').value.trim(); //Trim elimina espacios en blanco al final e inicio del valor obtenido
+    const lista = document.getElementById("listaAmigos"); //Crea una lista vacia, indica lugar donde se agrega la lista
+   
     if(nombre === ''){
-        alert("Por favor, inserte un nombre valido");
+        alert("Por favor, inserte un nombre válido.");
     } else{
         listaNombres.push(nombre);
         const espacioLista = document.createElement("li"); //Crea campo vacio para que se agregue en la lista
-        espacioLista.textContent = nombre;
-        lista.appendChild(espacioLista);
-        
+        espacioLista.textContent = nombre + " ";
+        lista.appendChild(espacioLista); //agrega el nuevo li dentro de ul
+        console.log(listaNombres);
+        //Crear boton eliminar nombre
+        let botonEliminar = document.createElement("button")
+        botonEliminar.textContent = " x ";
+
+        botonEliminar.onclick =function(){
+            espacioLista.remove(); 
+            indexListaNombres(nombre);
+            console.log(listaNombres);
+        };
+
+        // Asociar para ligar elemnto y botón eliminar, tomar un elemento padre y se agrega elemento hijo
+        // Padre nombre, hijo bóton eliminar
+        //Agregar boton de eliminar al elemento de la lista nombre
+        espacioLista.appendChild(botonEliminar); 
     }
 
   limpiarCampo();
@@ -32,9 +45,7 @@ function sortearAmigo(){
         
         tuAmigoSecretoEs.innerHTML = `🎉 Dale un regalo a: ${listaNombres[indexAmigo]} 🎉`;
         listaNombres.splice(indexAmigo,1);
-    }
-
-    
+    } 
     
 }
 
@@ -49,4 +60,11 @@ function reiniciarSorteo(){
 
 function limpiarCampo(){
     document.getElementById('amigo').value =''; 
+}
+
+function indexListaNombres(nombre){
+    let indexEliminar = listaNombres.indexOf(nombre);
+    if (indexEliminar !== -1){
+        listaNombres.splice(indexEliminar, 1); // Eliminar de la lista en JS, index indica el nombre a eliminar, el segundo 1 indica cuantos elementos se van a eliminar
+    }
 }

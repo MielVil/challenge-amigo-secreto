@@ -13,10 +13,11 @@
 
 
 
-
 body {
     background-image: url('/assets/corazones-big.png');
-    background-size: contain;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: var(--font-arial);
     height: 100vh;
     background-color: var(--color-primary);
@@ -31,7 +32,26 @@ body {
     font-size: 1.6rem;
 }
 
-
+@media (max-width: 1000px){
+    body{
+        background-image: url('/assets/corazones-horizontal.png');
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: var(--font-arial);
+        height: 100vh;
+        background-color: var(--color-primary);
+        color: var(--color-secondary);
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+}
 
 /* Sección de entrada, cuadro blanco con elementos */
 .input-section {

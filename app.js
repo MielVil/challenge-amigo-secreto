@@ -59,6 +59,8 @@ function reiniciarSorteo(){
     listaNombres.length = 0; // También limpiamos el array
     limpiarCampo();
     console.log(listaNombres);
+    let digiteNombre = document.getElementById("tuAmigoEs");    //Regresar a "Digite el nombre de sus amigos"
+    digiteNombre.innerHTML = "Digite el nombre de sus amigos";
 }
 
 function limpiarCampo(){

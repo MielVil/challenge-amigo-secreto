@@ -7,6 +7,7 @@
     <img src="https://img.shields.io/badge/HTML5-%23E34F26?style=for-the-badge&logo=html5&logoColor=%23E34F26&logoSize=auto&labelColor=black" style="margin-right: 10px;"> 
     <img src="https://img.shields.io/badge/CSS-%23663399?style=for-the-badge&logo=css&logoColor=%23663399&logoSize=auto&labelColor=black" style="margin-right: 10px;"> <br> <br>
     <img src="https://img.shields.io/github/last-commit/MielVil/challenge-amigo-secreto">
+    <img src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
 El proyecto de “Amigo Secreto” permmite ingresar nombres, ver la lista de participantes y eliminar alguno si es necesario. Al presionar “Sortear”, se asigna aleatoriamente a quién debes dar un regalo. 

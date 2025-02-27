@@ -32,8 +32,7 @@ Link: https://challenge-amigo-secreto-jade-eight.vercel.app/
 
 ## Créditos
 
-Este proyecto fue desarrollado como parte de un reto propuesto por **ALURA LATAM** mediante el programa y curso **ONE - Oracle Next Education
-**, quienes proporcionaron la estructura inicial en HTML y CSS. Se añadieron mejoras y funcionalidades en JavaScript y se realizaron modificaciones en el CSS.
+Este proyecto fue desarrollado como parte de un reto propuesto por **ALURA LATAM** mediante el programa y curso **ONE - Oracle Next Education** , quienes proporcionaron la estructura inicial en HTML y CSS. Se añadieron mejoras y funcionalidades en JavaScript y se realizaron modificaciones en el CSS.
 
 ## License
 

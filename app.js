@@ -58,7 +58,6 @@ function reiniciarSorteo(){
     lista.innerHTML = "";
     listaNombres.length = 0; // También limpiamos el array
     limpiarCampo();
-    console.log(listaNombres);
     let digiteNombre = document.getElementById("tuAmigoEs");    //Regresar a "Digite el nombre de sus amigos"
     digiteNombre.innerHTML = "Digite el nombre de sus amigos";
 }
@@ -73,3 +72,9 @@ function indexListaNombres(nombre){
         listaNombres.splice(indexEliminar, 1); // Eliminar de la lista en JS, index indica el nombre a eliminar, el segundo 1 indica cuantos elementos se van a eliminar
     }
 }
+
+
+// Seleccionar quien es para ver nombre de amigo secreto
+// Descargar lista de emparejamientos
+// Subir .csv o .xlsx  y sortear a partir de ahi
+// Mandar correos, whatsapps, o link
